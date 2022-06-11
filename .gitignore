@@ -1,7 +1,8 @@
 .DS_Store
-.main.exe
-.main.o
-.MinhaBiblioteca.h
-.MinhaBiblioteca.o
-../../projeto/
-../antigo/
+projeto/cliente.c
+projeto/servidor.c
+prova_exercicios/antigo/*
+prova_exercicios/ex_03_jun/*
+prova_exercicios/ava_10_jun/main.exe
+prova_exercicios/ava_10_jun/main.o
+prova_exercicios/ava_10_jun/MinhaBiblioteca.o
