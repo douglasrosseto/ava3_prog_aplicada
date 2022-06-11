@@ -1,7 +1,15 @@
+#include "MinhaBiblioteca.h"
 #include <stdio.h>
 
 int main(){
 
-    return(0);
+    tPonteiro msg, ch1, ch2;
+
+    msg = readMsg();
+
+    printf("Mensagem: %s", msg.mensagem);
+    fflush(stdout);
+
+    return 0;
 
 }
