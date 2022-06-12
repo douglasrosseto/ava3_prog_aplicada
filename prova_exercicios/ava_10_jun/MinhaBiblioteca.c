@@ -3,9 +3,11 @@
 #include "string.h"
 
 int lerMsg(tPonteiro *tp){
+    
+    printf("Digite a mensagem, char inicial e char final:\n");
+    scanf("%s %c %c", tp->mensagem_depois, &tp->inicial, &tp->final);
 
-    printf("Digite a mensagem, char inicial e char final (entre espaços): ");
-    scanf("%s %c %c", tp->mensagem_antes, &tp->start, &tp->end);
+    strncpy(tp->mensagem_antes, tp->mensagem_depois, MAX_SIZE);
 
     return 0;
 }
@@ -14,10 +16,10 @@ int trocaChar(tPonteiro *tp){
 
     int cont = 0;
 
-    for (int i = 0; tp->mensagem_antes[i]; ++i) {
-        if (tp->mensagem_antes[i] == tp->start)
+    for (int i = 0; tp->mensagem_depois[i]; ++i) {
+        if (tp->mensagem_depois[i] == tp->inicial)
         {
-            tp->mensagem_antes[i] = tp->end;
+            tp->mensagem_depois[i] = tp->final;
             cont++;
         }
     }

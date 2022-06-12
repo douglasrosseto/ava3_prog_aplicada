@@ -4,12 +4,12 @@
 int main(void){
 
     int contador;
+    tPonteiro pntr;
 
-    tPonteiro pntr = { .mensagem_antes =  ""};
     lerMsg(&pntr);
     contador = trocaChar(&pntr);
 
-    printf("char ini: %c\nchar fim: %c\nnova msg: %s\ncont: %d\n", pntr.start, pntr.end, pntr.mensagem_antes, contador);
+    printf("\n%s\n%s\n%d\n", pntr.mensagem_antes , pntr.mensagem_depois, contador);
 
     return 0;
 
