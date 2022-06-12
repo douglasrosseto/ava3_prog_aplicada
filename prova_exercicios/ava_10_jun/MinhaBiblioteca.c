@@ -3,11 +3,10 @@
 #include "string.h"
 
 tPonteiro readMsg(){
-    tPonteiro msg;
+    tPonteiro nPonteiro;
 
-    printf("Entre com a mensagem: ");
-    fflush(stdout);
-    scanf("%s", msg.mensagem);
+    printf("Digite a mensagem, char inicial e char final (entre espaços): ");
+    scanf("%s %c %c", nPonteiro.message, &nPonteiro.start, &nPonteiro.end);
 
-    return msg;
+    return(nPonteiro);
 }

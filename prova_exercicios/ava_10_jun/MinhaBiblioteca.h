@@ -2,9 +2,9 @@
 #define __MINHABIBLIOTECA_H
 
 typedef struct ponteiro{
-    
-    char mensagem[100];
-
+    char message[100];
+    char start;
+    char end;
 } tPonteiro;
 
 tPonteiro readMsg();
