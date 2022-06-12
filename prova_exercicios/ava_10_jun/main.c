@@ -1,21 +1,15 @@
 #include "MinhaBiblioteca.h"
 #include <stdio.h>
 
-int main(){
+int main(void){
 
-    tPonteiro ponteiro;
+    int contador;
 
-    ponteiro = readMsg();
+    tPonteiro pntr = { .mensagem_antes =  ""};
+    lerMsg(&pntr);
+    contador = trocaChar(&pntr);
 
-    printf("Mensagem: %s\n", ponteiro.message);
-
-    //teste identificando o caracter a ser trocado
-    for (int i = 0; ponteiro.message[i] != '\0'; ++i) {
-        if (ponteiro.start == ponteiro.message[i])
-        {
-            print("caracter a ser trocado: %c\n", ponteiro.message[i]);
-        }
-    }
+    printf("char ini: %c\nchar fim: %c\nnova msg: %s\ncont: %d\n", pntr.start, pntr.end, pntr.mensagem_antes, contador);
 
     return 0;
 

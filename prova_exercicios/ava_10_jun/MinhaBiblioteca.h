@@ -1,13 +1,17 @@
 #ifndef __MINHABIBLIOTECA_H
 #define __MINHABIBLIOTECA_H
+#define MAX_SIZE 1024
 
 typedef struct ponteiro{
-    char message[100];
+    char mensagem_antes[MAX_SIZE];
+    char mensagem_depois[MAX_SIZE];
     char start;
     char end;
 } tPonteiro;
 
-tPonteiro readMsg();
+int lerMsg(tPonteiro *ponteiro);
+
+int trocaChar(tPonteiro *ponteiro);
 
 #endif
 
